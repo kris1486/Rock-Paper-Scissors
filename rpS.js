@@ -57,27 +57,39 @@ let result;
         }
         else if(computerPick == "ROCK"){
             result = ( youPick == "PAPER") ? "You Win!" : "You Lose!";
+            if(result = "You Win!"){
+                youScore.innerHTML = parseInt(youScore.innerHTML)+1;
+            } else{
+                if(result = "You Lose!") {
+                    computerScore.innerHTML = parseInt(computerScore.innerHTML)+1; 
+                }
+            }
         }
         else if(computerPick == "PAPER"){
             result = ( youPick == "SCISSORS") ? "You Win!" : "You Lose!";
+            if(result = "You Win!"){
+                youScore.innerHTML = parseInt(youScore.innerHTML)+1;
+            } else{
+                if(result = "You Lose!") {
+                    computerScore.innerHTML = parseInt(computerScore.innerHTML)+1; 
+                }
+            }
+
         }
         else if(computerPick == "SCISSORS"){
             result = ( youPick == "ROCK") ? "You Win!" : "You Lose!";
+            if(result = "You Win!"){
+                youScore.innerHTML = parseInt(youScore.innerHTML)+1;
+            } else{
+                if(result = "You Lose!") {
+                    computerScore.innerHTML = parseInt(computerScore.innerHTML)+1; 
+                }
+            }
         }
         resultDisplay.innerHTML = result;
     }
 
-    // function scoreY() {
-
-    //     if(resultDisplay == "You Win!") {    
-    //         score + 1 
-    //     }
-    //     youScore.innerHTML = scoreY + 1;
-
-    //     if(resultDisplay == "You Lose!") {
-    //        computerScore.innerHTML = scoreC +1;
-    //     }
-    // }
+   
 
 
 resetBtn.addEventListener("click", function(){
